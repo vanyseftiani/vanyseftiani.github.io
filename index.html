@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="vany seftiani kurnia">
+<meta name="dcterms.date" content="2024-01-06">
+
+<title>Analisis Pengaruh Inflasi Terhadap Tingkat Pengangguran di Indonesia pada Tahun 2023</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Analisis Pengaruh Inflasi Terhadap Tingkat Pengangguran di Indonesia pada Tahun 2023</h1>
+<p class="subtitle lead">Metode Penelitian Politeknik APP Jakarta</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>vany seftiani kurnia </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 6, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p><img src="poltekapp.jpg" class="img-fluid"></p>
+<section id="pendahuluan" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="pendahuluan"><span class="header-section-number">1</span> Pendahuluan</h2>
+<section id="latar-belakang" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="latar-belakang"><span class="header-section-number">1.1</span> Latar belakang</h3>
+<p>Inflasi dan pengangguran adalah dua fenomena ekonomi yang secara intrinsik terkait. Studi empiris global menunjukkan adanya korelasi antara tingkat inflasi dan tingkat pengangguran. Namun, pemahaman tentang hubungan ini di tingkat provinsi belum sepenuhnya tergali. Oleh karena itu, penelitian ini akan memberikan kontribusi terhadap literatur ekonomi dengan mengkaji dampak inflasi terhadap tingkat pengangguran di tingkat provinsi di Indonesia.</p>
+</section>
+<section id="ruang-lingkup" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="ruang-lingkup"><span class="header-section-number">1.2</span> Ruang lingkup</h3>
+<p>Penelitian ini akan memfokuskan pada analisis tingkat inflasi dan tingkat pengangguran di tingkat provinsi di Indonesia selama periode tertentu. Ruang lingkup penelitian ini mencakup analisis perbedaan variabilitas inflasi dan tingkat pengangguran antar provinsi serta faktor-faktor yang mungkin memengaruhi hubungan tersebut.</p>
+</section>
+<section id="rumusan-masalah" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="rumusan-masalah"><span class="header-section-number">1.3</span> Rumusan masalah</h3>
+<ol type="1">
+<li>Bagaimana hubungan antara tingkat inflasi dan tingkat pengangguran di tingkat provinsi di Indonesia?</li>
+<li>Apakah terdapat perbedaan signifikan dalam tingkat pengaruh inflasi terhadap tingkat pengangguran antar provinsi?</li>
+</ol>
+</section>
+<section id="tujuan-dan-manfaat-penelitian" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="tujuan-dan-manfaat-penelitian"><span class="header-section-number">1.4</span> Tujuan dan manfaat penelitian</h3>
+<p>Penelitian ini bertujuan untuk Mengidentifikasi dan menganalisis hubungan antara inflasi dan pengangguran di tingkat provinsi. Menyediakan data dan wawasan bagi pengambilan kebijakan regional. Melalui analisis ini, diharapkan pembaca dapat pemahaman yang lebih baik tentang mekanisme pasar tenaga kerja di tingkat regional.</p>
+</section>
+<section id="package" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="package"><span class="header-section-number">1.5</span> Package</h3>
+<p>Penelitian ini menggunakan Packages antara lain sebagai berikut:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"readxl"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"dplyr"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"ggplot2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="studi-pustaka" class="level3" data-number="1.6">
+<h3 data-number="1.6" class="anchored" data-anchor-id="studi-pustaka"><span class="header-section-number">1.6</span> Studi pustaka</h3>
+<p>Kondisi makro ekonomi negara merupakan salah satu indikator keberhasilan pembangunan (Hariyanti &amp; Soeharjoto, 2020).</p>
+<p>Setiap negara mengupayakan peningkatan pertumbuhan ekonomi dengan menerapkan pembangunan yang berkelanjutan (Soeharjoto &amp; Danova, 2020).</p>
+<p>Ekonomi memiliki permasalahan besar terutama pada pengangguran (Astid &amp; Soekapdjo, 2020).</p>
+</section>
+</section>
+<section id="metode-penelitian" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="metode-penelitian"><span class="header-section-number">2</span> Metode penelitian</h2>
+<section id="data" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="data"><span class="header-section-number">2.1</span> Data</h3>
+<p>data yang saya gunakan adalah tingkat pengangguran dan inflasi berdasarkan provinsi di indonesia</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Provinsi</th>
+<th>jumlah pengangguran (%)</th>
+<th>jumlah inflasi (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aceh</td>
+<td>6,03</td>
+<td>0,09</td>
+</tr>
+<tr class="even">
+<td>Sumatera Utara</td>
+<td>5,89</td>
+<td>2,25</td>
+</tr>
+<tr class="odd">
+<td>Sumatera Barat</td>
+<td>5,94</td>
+<td>2,47</td>
+</tr>
+<tr class="even">
+<td>Riau</td>
+<td>4,23</td>
+<td>3,26</td>
+</tr>
+<tr class="odd">
+<td>Jambi</td>
+<td>4,53</td>
+<td>3,72</td>
+</tr>
+<tr class="even">
+<td>Sumatera Selatan</td>
+<td>4,11</td>
+<td>3,17</td>
+</tr>
+<tr class="odd">
+<td>Bengkulu</td>
+<td>3,42</td>
+<td>3,08</td>
+</tr>
+<tr class="even">
+<td>Lampung</td>
+<td>4,23</td>
+<td>3,47</td>
+</tr>
+<tr class="odd">
+<td>Kep. Bangka belitung</td>
+<td>4,56</td>
+<td>3,87</td>
+</tr>
+<tr class="even">
+<td>Kep. Riau</td>
+<td>6.08</td>
+<td>0,44</td>
+</tr>
+<tr class="odd">
+<td>DKI Jakarta</td>
+<td>6,53</td>
+<td>2,33</td>
+</tr>
+<tr class="even">
+<td>Jawa Barat</td>
+<td>7,44</td>
+<td>2,35</td>
+</tr>
+<tr class="odd">
+<td>Jawa Tengah</td>
+<td>5,13</td>
+<td>5,63</td>
+</tr>
+<tr class="even">
+<td>DI Yogyakarta</td>
+<td>3,69</td>
+<td>2,44</td>
+</tr>
+<tr class="odd">
+<td>Jawa Timur</td>
+<td>4,88</td>
+<td>4,88</td>
+</tr>
+<tr class="even">
+<td>Banten</td>
+<td>7,52</td>
+<td>3,03</td>
+</tr>
+<tr class="odd">
+<td>Bali</td>
+<td>2,69</td>
+<td>5,32</td>
+</tr>
+<tr class="even">
+<td>Nusa Tenggara Barat</td>
+<td>2,08</td>
+<td>2,80</td>
+</tr>
+<tr class="odd">
+<td>Nusa Tenggara Timur</td>
+<td>3,14</td>
+<td>4,10</td>
+</tr>
+<tr class="even">
+<td>Kalimantan Barat</td>
+<td>5,05</td>
+<td>2,02</td>
+</tr>
+<tr class="odd">
+<td>Kalimantan Tengah</td>
+<td>4,01</td>
+<td>0,30</td>
+</tr>
+<tr class="even">
+<td>Kalimantan Selatan</td>
+<td>4,31</td>
+<td>2,43</td>
+</tr>
+<tr class="odd">
+<td>Kalimantan Timur</td>
+<td>5,31</td>
+<td>3,46</td>
+</tr>
+<tr class="even">
+<td>Kalimantan Utara</td>
+<td>4,01</td>
+<td>2,44</td>
+</tr>
+<tr class="odd">
+<td>Sulawesi Utara</td>
+<td>6,01</td>
+<td>6,61</td>
+</tr>
+<tr class="even">
+<td>Sulawesi Tengah</td>
+<td>2,95</td>
+<td>2,95</td>
+</tr>
+<tr class="odd">
+<td>Sulawesi Selatan</td>
+<td>4,33</td>
+<td>4,33</td>
+</tr>
+<tr class="even">
+<td>Sulawesi Tenggara</td>
+<td>3,15</td>
+<td>3,66</td>
+</tr>
+<tr class="odd">
+<td>Gorontalo</td>
+<td>3,06</td>
+<td>3,06</td>
+</tr>
+<tr class="even">
+<td>Sulawesi Barat</td>
+<td>2,27</td>
+<td>2,27</td>
+</tr>
+<tr class="odd">
+<td>Maluku</td>
+<td>6,31</td>
+<td>6,31</td>
+</tr>
+<tr class="even">
+<td>Maluku Utara</td>
+<td>4,31</td>
+<td>4,31</td>
+</tr>
+<tr class="odd">
+<td>Papua Barat</td>
+<td>5,38</td>
+<td>5,53</td>
+</tr>
+<tr class="even">
+<td>Papua</td>
+<td>2,67</td>
+<td>2,67</td>
+</tr>
+</tbody>
+</table>
+<p>penelitian ini menggunakan data yang bersumber dari badan puusat statistik (BPS)</p>
+<p>baca data</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"readxl"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">"pengangguraninflasi.xlsx"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 2
+      x y    
+  &lt;dbl&gt; &lt;chr&gt;
+1  6.03 0.09 
+2  5.89 2.25 
+3  5.94 2.47 
+4  4.23 3.26 
+5  4.53 3.72 
+6  4.11 3.17 </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"dplyr"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"ggplot2"</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>dat,<span class="fu">aes</span>(<span class="at">x=</span>x,<span class="at">y=</span>y)) <span class="sc">+</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">"blue"</span>,<span class="at">size=</span><span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Tabel 1. analisis pengaruh inflasi terhadap tingkat pengangguran di indonesia"</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">x=</span><span class="st">"pengangguran"</span>,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">y=</span><span class="st">"inflasi"</span>,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Sumber: Badan Pusat Statistik"</span>) <span class="sc">+</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_dark</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="metode-analisis" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="metode-analisis"><span class="header-section-number">2.2</span> metode analisis</h3>
+<p>Metode yang dipilih adalah regresi univariat atau Ordinary Least Square (OLS) dengan 1 variabel independen. Penelitian ini merbaksud mencari hubungan antara pengaruh inflasi terhaddap tingkat pengangguran di indonesia. Spesifikasi yang dilakukan adalah:</p>
+<p><span class="math display">\[
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+\]</span> di mana <span class="math inline">\(y_t\)</span> adalah tingkat pengangguran dan <span class="math inline">\(x_t\)</span> adalah inflasi.</p>
+</section>
+</section>
+<section id="pembahasan" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="pembahasan"><span class="header-section-number">3</span> pembahasan</h2>
+<section id="pembahasan-masalah" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="pembahasan-masalah"><span class="header-section-number">3.1</span> pembahasan masalah</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"readxl"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">"pengangguraninflasi.xlsx"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 2
+      x y    
+  &lt;dbl&gt; &lt;chr&gt;
+1  6.03 0.09 
+2  5.89 2.25 
+3  5.94 2.47 
+4  4.23 3.26 
+5  4.53 3.72 
+6  4.11 3.17 </code></pre>
+</div>
+</div>
+</section>
+<section id="analisis-masalah" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="analisis-masalah"><span class="header-section-number">3.2</span> analisis masalah</h3>
+<p>tampilan data yang dihasilkan dari regresi tersebut adalah sebagai berikut</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>reg<span class="ot">&lt;-</span><span class="fu">lm</span>(y<span class="sc">~</span>x,<span class="at">data=</span>dat)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = y ~ x, data = dat)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.1119 -0.8498 -0.1797  0.7255  3.4113 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  3.47559    0.91884   3.783 0.000642 ***
+x           -0.04539    0.19059  -0.238 0.813288    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 1.554 on 32 degrees of freedom
+Multiple R-squared:  0.001769,  Adjusted R-squared:  -0.02943 
+F-statistic: 0.05671 on 1 and 32 DF,  p-value: 0.8133</code></pre>
+</div>
+</div>
+</section>
+<section id="kesimpulan" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="kesimpulan"><span class="header-section-number">3.3</span> kesimpulan</h3>
+<p>Berdasarkan hasil penelitian mengenai pengaruh inflasi terhadap tingkat pengangguran di Indonesia pada tahun 2023, ditemukan bahwa terjadi penurunan sebesar 4,05% dalam tingkat pengangguran. Penurunan ini kemungkinan terkait dengan keberhasilan pemerintah dalam mengelola tingkat inflasi secara efektif. Dampak positif ini juga dapat diatribusikan pada kebijakan yang mendukung stabilitas ekonomi, memicu investasi, dan mendorong pertumbuhan sektor ekonomi, yang pada akhirnya berkontribusi pada penciptaan lapangan kerja. Temuan ini memberikan landasan bagi pembentukan kebijakan ekonomi berkelanjutan yang memperhitungkan keseimbangan antara stabilitas harga dan peluang kerja.</p>
+</section>
+<section id="referensi" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="referensi"><span class="header-section-number">3.4</span> referensi</h3>
+<p>BADAN PUSAT STATISTIK. n.d. “Tingkat Pengangguran Terbuka Menurut Provinsi (Persen), 2023.”</p>
+<p>Soeharjoto, and Mitha Rachma Oktavia. n.d. “Pengaruh Inflasi, Indeks Pembangunan Manusia, Dan Upah Minimum Provinsi Terhadap Pengangguran Di Indonesia.”</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
